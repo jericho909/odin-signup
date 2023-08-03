@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    background-image: url(./bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex: 70%;
+}
+
+#forms {
+    border-style: outset;
+    border-left: none;
+    border-right: none;
+}
+
+#hero,
+#forms,
+#signup {
+    flex: 33%;
+    padding: 25px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form {
+    display: flex;
+}
+

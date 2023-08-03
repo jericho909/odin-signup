@@ -34,13 +34,39 @@ body {
     padding: 25px;
 }
 
+#hero,
+#signup {
+    background-color: #E0DCDC;
+}
+
 #hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+#forms{
+    background-color: #F5F3F2;
+}
 #form {
     display: flex;
 }
 
+#container-one,
+#container-two {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#container-two {
+    margin-left: 80px;
+}
+
+#submitButton {
+    padding: 12px;
+    width: 240px;
+    border-radius: 6px;
+    background-color: #1D5B79;
+    color: white;
+}

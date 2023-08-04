@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    
 </head>
 <body>
     <div id="left">
-        <div id="logo"></div>
+        <div id="logo">
+            <div id="imgContainer"><img src="./logo.png" id="logoPic" width="140px" height="180px"></img></div>
+            <div id="logoName">ODIN</div>
+        </div>
     </div>
 
     <div id="right">
@@ -19,22 +23,22 @@
         </div>
         <div id="forms">
             <h1>Let's do this!</h1>
-            <form id="form">
+            <form id="form" action="https://httpbin.org/post" method="post">
                 <div id="container-one">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="firstName">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="pword">
+                    <label for="first-name">*FIRST NAME</label>
+                    <input required type="text" name="first-name" id="firstName">
+                    <label for="email">*EMAIL</label>
+                    <input required type="email" name="email" id="email">
+                    <label for="password">*PASSWORD</label>
+                    <input required type="password" name="password" id="pword" minlength="8">
                 </div>
                 <div id="container-two">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="lastName">
+                    <label for="last-name">*LAST NAME</label>
+                    <input required type="text" name="last-name" id="lastName">
                     <label for="phone-number">PHONE NUMBER</label>
                     <input type="tel" name="phone-number" id="phoneNumber">
-                    <label for="password">CONFIRM PASSWORD</label>
-                    <input type="password" name="password" id="pword">
+                    <label for="confirm-password">*CONFIRM PASSWORD</label>
+                    <input required type="password" name="confirm-password" id="confirm-pword">
                 </div>
 
             </form>
